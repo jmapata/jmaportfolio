@@ -115,7 +115,9 @@ const projects = [
       <h4>Compétences développées</h4>
       <p>Cette réalisation m'a permis de maîtriser l'intégration d'architectures d'IA de pointe dans des applications web modernes, tout en renforçant mes compétences en gestion des performances et en sécurité applicative.</p>
     `,
-    images: [], // ajoute tes images ici: assets/projects/virtual-tryon-ecommerce/1.jpg, 2.jpg, ...
+    images: ['assets/img/cadre5/accueil.png','assets/img/cadre5/inscription.png', 'assets/img/cadre5/connexion.png','assets/img/cadre5/accueil2.png','assets/img/cadre5/profil.png','assets/img/cadre5/univers.png'
+      ,'assets/img/cadre5/propos.png','assets/img/cadre5/contact.png','assets/img/cadre5/fac.png','assets/img/cadre5/profil.png','assets/img/cadre5/collection.png','assets/img/cadre5/details.png','assets/img/cadre5/panier.png','assets/img/cadre5/essayage.png'
+      ,'assets/img/cadre5/essayage1.png','assets/img/cadre5/essayage2.png'], // ajoute tes images ici: assets/projects/virtual-tryon-ecommerce/1.jpg, 2.jpg, ...
     tags: ['Next.js', 'Node.js', 'MongoDB', 'Replicate', 'IA', 'Virtual Try-On']
   },
   {

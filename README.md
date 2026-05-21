@@ -1,25 +1,47 @@
-# Portfolio Web Statique
+# JMPORTFOLIO — Portfolio Web statique
 
-Ce projet contient un modèle de portfolio statique pour présenter tes projets, tes compétences et tes informations de contact.
+Ce dépôt contient un site portfolio statique pour présenter tes projets, compétences et moyens de contact.
 
-## Structure du projet
+**Fonctionnalités clés**
+- Pages responsive (HTML/CSS)
+- Rendu dynamique des projets depuis `assets/js/projects.js`
+- Modale de détails et galerie d'images
+- Formulaire de contact (Formspree ou équivalent)
 
-- `index.html` : page principale du portfolio
-- `assets/css/style.css` : design complet et mise en page
-- `assets/css/animations.css` : animations, transitions et effets visuels
-- `assets/js/main.js` : navigation, menu burger, scroll actif et dark mode
-- `assets/js/projects.js` : données de projets et rendu dynamique des cartes
-- `assets/` : dossier pour les images de projet
+**Structure importante**
+- `index.html` — page principale
+- `assets/css/` — styles (`style.css`, `animations.css`)
+- `assets/js/main.js` — interactions globales (nav, CV, modal)
+- `assets/js/projects.js` — données des projets et rendu des cartes
+- `assets/projects/<slug>/` — dossier d'images par projet
 
-## Instructions
+Guide rapide
 
-1. Ouvre `index.html` dans ton navigateur pour voir le portfolio.
-2. Remplace les textes de `index.html` par tes informations personnelles.
-3. Ajoute tes images de projets dans `assets/` et ajuste les balises `<img>` si besoin.
-4. Pour héberger le site, tu peux utiliser GitHub Pages, Netlify ou Vercel.
+- Exécuter localement : ouvre `index.html` dans ton navigateur (site statique).
+- Ajouter/éditer un projet : édite `assets/js/projects.js` et renseigne `images: []` avec `assets/projects/<slug>/1.jpg`, etc.
+- Images : place les images dans `assets/projects/<slug>/` et nomme-les `1.jpg`, `2.jpg`...
 
-## Conseils de personnalisation
+Déploiement (rapide)
 
-- Modifie les couleurs dans `styles.css` pour adapter le thème à ton style.
-- Ajoute ou remplace des sections si tu veux afficher un CV, des certifications ou une galerie.
-- Tu peux aussi créer plusieurs pages si tu souhaites séparer les réalisations par catégorie.
+- GitHub Pages (branche `main` ou `gh-pages`) : pousse le repo et active Pages dans les réglages.
+- Azure Static Web Apps : créer un Static Web App et configurer l'origine sur ce repo, build output `/`.
+- Alternatif : Netlify / Vercel (drag & drop ou connexion repo).
+
+Commandes utiles
+
+```bash
+git add README.md
+git commit -m "Update README"
+git push origin main
+```
+
+Contribution
+
+- Ouvre une issue ou fais une PR si tu veux modifier le design ou ajouter des projets.
+
+Licence
+
+Ce dépôt est personnel — adapte la licence selon ton usage.
+
+---
+_Besoin d'un README en anglais, d'un changement de style, ou que je commit/pousse ces modifications pour toi ?_
