@@ -122,8 +122,46 @@ body {
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
-    margin-bottom: 20px;
     width: fit-content;
+}
+
+.status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.rhythm-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.rhythm-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.btn-download-prog {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-blue);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.btn-download-prog:hover {
+    background: rgba(43, 110, 246, 0.1);
 }
 
 .badge-dot {
@@ -518,7 +556,9 @@ body {
 @media (max-width: 968px) {
     .hero { padding-top: 120px; }
     .hero-container, .about-grid, .skills-grid, .projects-grid, .form-row { grid-template-columns: 1fr; }
-    .badge, .hero-text p, .hero-buttons { margin-left: auto; margin-right: auto; justify-content: center; text-align: center; }
+    .status-container, .badge, .hero-text p, .hero-buttons { margin-left: auto; margin-right: auto; justify-content: center; text-align: center; }
+    .status-container { align-items: center; }
+    .rhythm-group { justify-content: center; }
     .hero-container { text-align: center; }
     .hero-avatar { order: -1; margin-bottom: 20px; }
     .avatar-wrapper { width: 220px; height: 220px; }

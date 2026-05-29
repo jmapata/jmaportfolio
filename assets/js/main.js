@@ -70,3 +70,17 @@ if (cvDownloadBtn) {
         document.body.removeChild(link);
     });
 }
+
+// Programme Scolaire Download - force download instead of opening in browser
+const progDownloadBtn = document.getElementById('prog-download');
+if (progDownloadBtn) {
+    progDownloadBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const link = document.createElement('a');
+        link.href = 'assets/cv/Programme-Scolaire.pdf';
+        link.download = 'Programme-Scolaire.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+}
