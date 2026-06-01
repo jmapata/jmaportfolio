@@ -83,6 +83,29 @@ const projects = [
     tags: ['Power BI', 'DAX', 'SQL', 'PostgreSQL', 'Data Warehouse', 'BI']
   },
   {
+    slug: 'powerbi-commande-annulee',
+    title: 'Optimisation Décisionnelle & Analyse de Performance Commerciale',
+    shortDescription: 'Entrepôt de données et dashboard Power BI pour suivre les annulations, les revenus et la sécurité des données.',
+    longDescription: `
+    <h4>Problématique métier</h4>
+    <p>Ce projet répond au besoin critique d'une entreprise commerciale de centraliser, nettoyer et modéliser ses données de ventes brutes afin de piloter ses indicateurs de performance (KPIs) en temps réel. Face à un flux de données non structuré, l'enjeu était de concevoir une architecture décisionnelle robuste capable de suivre la rentabilité globale tout en isolant et en analysant spécifiquement les pertes financières liées aux commandes annulées.</p>
+    
+    <h4>Objectif</h4>
+    <p>L'objectif principal était de concevoir un entrepôt de données optimisé et de déployer un tableau de bord multi-onglets hautement interactif sous Power BI. L'application devait permettre au top management d'analyser l'évolution du chiffre d'affaires, de mesurer précisément l'impact et les tendances trimestrielles des annulations par produit ou région, et d'offrir une navigation fluide et sécurisée adaptée tant sur ordinateur que sur support mobile.</p>
+    
+    <h4>Approche</h4>
+    <p>L'approche technique a débuté dans Power Query par une phase rigoureuse de profilage et de nettoyage de la qualité des données (analyse de distribution, typage et renommage explicite). J'ai ensuite procédé à la normalisation de la table brute en appliquant le principe de modélisation en schéma en étoile, isolant les tables de dimensions (Clients, Produits, Régions) de la table de faits (Ventes). Une fois les relations cardinales établies, j'ai structuré une table dédiée aux mesures DAX avancées (Time Intelligence, calculs itératifs via CALCULATE et optimisation des divisions avec DIVIDE) pour générer des indicateurs dynamiques et des visuels avancés (Donut, Treemap, graphiques en Ruban). Pour parfaire l'expérience utilisateur (UX), j'ai intégré une charte graphique personnalisée via un thème JSON, conçu un menu de navigation par icônes, configuré des info-bulles dynamiques imbriquées (Tooltips) et créé des signets (Bookmarks) interactifs pour filtrer instantanément les types de produits ou réinitialiser le tableau de bord.</p>
+    
+    <h4>Compétences développées</h4>
+    <p>Ce projet avancé a consolidé ma maîtrise du cycle complet d'un projet décisionnel (Business Intelligence). J'ai renforcé mes compétences en ingénierie de données (ETL et normalisation dimensionnelle), en programmation analytique avec le langage DAX, ainsi qu'en design d'interfaces décisionnelles complexes et interactives. De plus, j'ai mis en pratique des fonctionnalités de gouvernance et de sécurité des données à l'aide de la sécurité au niveau des lignes (Row-Level Security - RLS) en configurant des rôles d'accès restreints par société et région, avant de finaliser le projet par le design d'une vue responsive mobile et sa publication sur Power BI Service.</p>
+    
+    <h4>Base de données</h4>
+    <p>Le projet a été entièrement développé et validé à partir du fichier transactionnel <strong>sales_2.csv</strong>. Ce jeu de données comprend des informations complètes sur les flux de ventes, incluant les identifiants uniques de commandes, les segmentations clients (CompanyName), les nomenclatures produits (Category), la sectorisation géographique (RegionName), ainsi que les métriques financières et les statuts opérationnels des transactions (OrderStatus) indispensables pour simuler un environnement de production.</p>
+    `,
+    images: [],
+    tags: ['Power BI', 'Power Query', 'DAX', 'ETL', 'RLS', 'Dashboard', 'Data Warehouse']
+  },
+  {
     slug: 'green-it-platform',
     title: 'Solution Green IT - Scalian Rennes',
     shortDescription: 'Plateforme de calcul d’empreinte carbone avec Fast API, Angular 20 et Python.',
