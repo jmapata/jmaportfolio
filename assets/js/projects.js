@@ -102,7 +102,7 @@ const projects = [
     <h4>Base de données</h4>
     <p>Le projet a été entièrement développé et validé à partir du fichier transactionnel <strong>sales_2.csv</strong>. Ce jeu de données comprend des informations complètes sur les flux de ventes, incluant les identifiants uniques de commandes, les segmentations clients (CompanyName), les nomenclatures produits (Category), la sectorisation géographique (RegionName), ainsi que les métriques financières et les statuts opérationnels des transactions (OrderStatus) indispensables pour simuler un environnement de production.</p>
     `,
-    images: ['assets/img/cadre6/power2.png', 'assets/img/cadre6/power1.png','assets/img/cadre6/power3.png','assets/img/cadre6/powerquery.png'], // ajoute tes images ici: assets/projects/powerbi-commande-annulee/1.jpg, 2.jpg, ...
+    images: ['assets/img/cadre6/accueil.png','assets/img/cadre6/power2.png', 'assets/img/cadre6/power3.png','assets/img/cadre6/powerquery.png'], // ajoute tes images ici: assets/projects/powerbi-commande-annulee/1.jpg, 2.jpg, ...
     tags: ['Power BI', 'Power Query', 'DAX', 'ETL', 'RLS', 'Dashboard', 'Data Warehouse']
   },
   {
